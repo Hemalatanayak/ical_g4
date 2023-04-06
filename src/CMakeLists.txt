@@ -1,0 +1,7 @@
+include_directories("${CMAKE_SOURCE_DIR}/include}")
+# add_library(g4mical_action G01ActionInitialization.cc)
+# add_library(g4mical_generator G01PrimaryGeneratorAction.cc)
+# add_library(g4mical_stepping SteppingAction.cc)
+# add_library(g4mical_run RunAction.cc)
+# add_library(g4mical_event EventAction.cc)
+# add_library(g4mical_detector G01DetectorConstruction.cc)

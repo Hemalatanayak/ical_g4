@@ -1,0 +1,2 @@
+/usr/bin/ar qc libg4mical_generator.a CMakeFiles/g4mical_generator.dir/G01PrimaryGeneratorAction.cc.o
+/usr/bin/ranlib libg4mical_generator.a

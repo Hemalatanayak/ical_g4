@@ -1,0 +1,2 @@
+/usr/bin/ar qc libg4mical_stepping.a CMakeFiles/g4mical_stepping.dir/SteppingAction.cc.o
+/usr/bin/ranlib libg4mical_stepping.a

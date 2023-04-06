@@ -1,0 +1,2 @@
+/usr/bin/ar qc libg4mical_action.a CMakeFiles/g4mical_action.dir/G01ActionInitialization.cc.o
+/usr/bin/ranlib libg4mical_action.a

@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+  <define>
+    <position name="IRON_1inTOPpos" x="0" y="0" z="-50" unit="cm"/>
+    <position name="IRON_2inTOPpos" x="0" y="0" z="-39.899900000000002" unit="cm"/>
+    <position name="IRON_3inTOPpos" x="0" y="0" z="-29.799800000000001" unit="cm"/>
+    <position name="IRON_4inTOPpos" x="0" y="0" z="-19.6997" unit="cm"/>
+    <position name="IRON_5inTOPpos" x="0" y="0" z="-9.5996000000000024" unit="cm"/>
+    <position name="IRON_6inTOPpos" x="0" y="0" z="0.50049999999999528" unit="cm"/>
+    <position name="IRON_7inTOPpos" x="0" y="0" z="10.6006" unit="cm"/>
+    <position name="IRON_8inTOPpos" x="0" y="0" z="20.700699999999998" unit="cm"/>
+    <position name="IRON_9inTOPpos" x="0" y="0" z="30.800799999999995" unit="cm"/>
+    <position name="IRON_10inTOPpos" x="0" y="0" z="40.900899999999993" unit="cm"/>
+    <position name="IRON_11inTOPpos" x="0" y="0" z="51.000999999999991" unit="cm"/>
+    <position name="GLASS_1inTOPpos" x="0" y="0" z="-44.950000000000003" unit="cm"/>
+    <position name="GLASS_2inTOPpos" x="0" y="0" z="-34.849900000000005" unit="cm"/>
+    <position name="GLASS_3inTOPpos" x="0" y="0" z="-24.7498" unit="cm"/>
+    <position name="GLASS_4inTOPpos" x="0" y="0" z="-14.649700000000003" unit="cm"/>
+    <position name="GLASS_5inTOPpos" x="0" y="0" z="-4.5496000000000052" unit="cm"/>
+    <position name="GLASS_6inTOPpos" x="0" y="0" z="5.5504999999999924" unit="cm"/>
+    <position name="GLASS_7inTOPpos" x="0" y="0" z="15.650599999999997" unit="cm"/>
+    <position name="GLASS_8inTOPpos" x="0" y="0" z="25.750699999999995" unit="cm"/>
+    <position name="GLASS_9inTOPpos" x="0" y="0" z="35.850799999999992" unit="cm"/>
+    <position name="GLASS_10inTOPpos" x="0" y="0" z="45.95089999999999" unit="cm"/>
+  </define>
+  <materials>
+    <material name="Air" Z="1">
+      <D unit="g/cm3" value="0.0012049999999999999"/>
+      <atom unit="g/mole" value="1"/>
+    </material>
+    <material name="Iron" Z="26">
+      <D unit="g/cm3" value="7.8700000000000001"/>
+      <atom unit="g/mole" value="55.850000000000001"/>
+    </material>
+    <material name="Glass" Z="14">
+      <D unit="g/cm3" value="2.5"/>
+      <atom unit="g/mole" value="28.09"/>
+    </material>
+  </materials>
+  <solids>
+    <box name="TOP" x="250" y="250" z="120" lunit="cm"/>
+    <box name="IRON0x1" x="200" y="200" z="5.5999999999999996" lunit="cm"/>
+    <box name="GLASS0x1" x="200" y="200" z="0.0001" lunit="cm"/>
+  </solids>
+  <structure>
+    <volume name="IRON">
+      <materialref ref="Iron"/>
+      <solidref ref="IRON0x1"/>
+    </volume>
+    <volume name="GLASS">
+      <materialref ref="Glass"/>
+      <solidref ref="GLASS0x1"/>
+    </volume>
+    <volume name="TOP">
+      <materialref ref="Air"/>
+      <solidref ref="TOP"/>
+      <physvol name="IRON_1" copynumber="1">
+        <volumeref ref="IRON"/>
+        <positionref ref="IRON_1inTOPpos"/>
+      </physvol>
+      <physvol name="IRON_2" copynumber="2">
+        <volumeref ref="IRON"/>
+        <positionref ref="IRON_2inTOPpos"/>
+      </physvol>
+      <physvol name="IRON_3" copynumber="3">
+        <volumeref ref="IRON"/>
+        <positionref ref="IRON_3inTOPpos"/>
+      </physvol>
+      <physvol name="IRON_4" copynumber="4">
+        <volumeref ref="IRON"/>
+        <positionref ref="IRON_4inTOPpos"/>
+      </physvol>
+      <physvol name="IRON_5" copynumber="5">
+        <volumeref ref="IRON"/>
+        <positionref ref="IRON_5inTOPpos"/>
+      </physvol>
+      <physvol name="IRON_6" copynumber="6">
+        <volumeref ref="IRON"/>
+        <positionref ref="IRON_6inTOPpos"/>
+      </physvol>
+      <physvol name="IRON_7" copynumber="7">
+        <volumeref ref="IRON"/>
+        <positionref ref="IRON_7inTOPpos"/>
+      </physvol>
+      <physvol name="IRON_8" copynumber="8">
+        <volumeref ref="IRON"/>
+        <positionref ref="IRON_8inTOPpos"/>
+      </physvol>
+      <physvol name="IRON_9" copynumber="9">
+        <volumeref ref="IRON"/>
+        <positionref ref="IRON_9inTOPpos"/>
+      </physvol>
+      <physvol name="IRON_10" copynumber="10">
+        <volumeref ref="IRON"/>
+        <positionref ref="IRON_10inTOPpos"/>
+      </physvol>
+      <physvol name="IRON_11" copynumber="11">
+        <volumeref ref="IRON"/>
+        <positionref ref="IRON_11inTOPpos"/>
+      </physvol>
+      <physvol name="GLASS_1" copynumber="1">
+        <volumeref ref="GLASS"/>
+        <positionref ref="GLASS_1inTOPpos"/>
+      </physvol>
+      <physvol name="GLASS_2" copynumber="2">
+        <volumeref ref="GLASS"/>
+        <positionref ref="GLASS_2inTOPpos"/>
+      </physvol>
+      <physvol name="GLASS_3" copynumber="3">
+        <volumeref ref="GLASS"/>
+        <positionref ref="GLASS_3inTOPpos"/>
+      </physvol>
+      <physvol name="GLASS_4" copynumber="4">
+        <volumeref ref="GLASS"/>
+        <positionref ref="GLASS_4inTOPpos"/>
+      </physvol>
+      <physvol name="GLASS_5" copynumber="5">
+        <volumeref ref="GLASS"/>
+        <positionref ref="GLASS_5inTOPpos"/>
+      </physvol>
+      <physvol name="GLASS_6" copynumber="6">
+        <volumeref ref="GLASS"/>
+        <positionref ref="GLASS_6inTOPpos"/>
+      </physvol>
+      <physvol name="GLASS_7" copynumber="7">
+        <volumeref ref="GLASS"/>
+        <positionref ref="GLASS_7inTOPpos"/>
+      </physvol>
+      <physvol name="GLASS_8" copynumber="8">
+        <volumeref ref="GLASS"/>
+        <positionref ref="GLASS_8inTOPpos"/>
+      </physvol>
+      <physvol name="GLASS_9" copynumber="9">
+        <volumeref ref="GLASS"/>
+        <positionref ref="GLASS_9inTOPpos"/>
+      </physvol>
+      <physvol name="GLASS_10" copynumber="10">
+        <volumeref ref="GLASS"/>
+        <positionref ref="GLASS_10inTOPpos"/>
+      </physvol>
+    </volume>
+  </structure>
+  <setup name="default" version="1.0">
+    <world ref="TOP"/>
+  </setup>
+</gdml>

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libg4mical_detector.a CMakeFiles/g4mical_detector.dir/G01DetectorConstruction.cc.o
+/usr/bin/ranlib libg4mical_detector.a

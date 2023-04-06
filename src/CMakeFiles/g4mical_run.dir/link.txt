@@ -1,0 +1,2 @@
+/usr/bin/ar qc libg4mical_run.a CMakeFiles/g4mical_run.dir/RunAction.cc.o
+/usr/bin/ranlib libg4mical_run.a

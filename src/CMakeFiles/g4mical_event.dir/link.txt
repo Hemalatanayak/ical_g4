@@ -1,0 +1,2 @@
+/usr/bin/ar qc libg4mical_event.a CMakeFiles/g4mical_event.dir/EventAction.cc.o
+/usr/bin/ranlib libg4mical_event.a
