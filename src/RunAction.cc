@@ -55,7 +55,7 @@ RunAction::RunAction()
   //analysisManager->SetNtupleDirectoryName("ntuple");
   analysisManager->SetVerboseLevel(1);
   analysisManager->SetNtupleMerging(true);
-  analysisManager->OpenFile("ical_output_1GeV.csv");
+  analysisManager->OpenFile("ical_mu+_down_1GeV.csv");
 
   analysisManager->CreateNtuple("ical_data", "3D hits and time");
   analysisManager->CreateNtupleDColumn("id");
